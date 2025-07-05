@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <audio id="bgMusic" src="music1.mp3" loop ></audio>
+    <audio id="bgMusic2" src="music2.mp3" ></audio>
+
+
+
+    <div id="intro">
+        <p>guess the dice number</p>
+        <button onclick="showTheGame()">start the game</button>
+    </div>
+
+
+
+
+
+
+    <div class="container disp">
+        <button id="exit" onclick="backThegame()">Exit Game</button>
+        <div class="result_corner">
+            <h3 id="score">Score: 0</h3>
+        </div>
+        <div class="highest-score">
+            Highest Score: <span id="highScore">0</span>
+        </div>
+
+        <div class="dice" id="dice">
+            <div class="face" id="face1">
+                <span class="dot"></span>
+            </div>
+            <div class="face" id="face2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+            <div class="face" id="face3">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+            <div class="face" id="face4">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+            <div class="face" id="face5">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="face" id="face6">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+         <div class="gamebtn">
+            <button class="roll-btn" onclick="rollDice(event)">1</button>
+            <button class="roll-btn" onclick="rollDice(event)">2</button>
+            <button class="roll-btn" onclick="rollDice(event)">3</button>
+            <button class="roll-btn" onclick="rollDice(event)">4</button>
+            <button class="roll-btn" onclick="rollDice(event)">5</button>
+            <button class="roll-btn" onclick="rollDice(event)">6</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
